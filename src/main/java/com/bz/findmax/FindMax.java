@@ -2,14 +2,15 @@ package com.bz.findmax;
 import java.lang.*;
 public class FindMax {
 
-    public Float findMaximun(Float num1 , Float num2 , Float num3){
-        Float max = num1;
-        if(num2.compareTo(max)>0){
-            max=num2;
+    public String findMaximum(String x , String y , String z){
+        String max = x;
+        if(y.compareTo(max)>0){
+            max=y;
         }
-        if(num3.compareTo(max)>0){
-            max=num3;
+        if(z.compareTo(max)>0){
+            max=z;
         }
         return max;
     }
+
 }
