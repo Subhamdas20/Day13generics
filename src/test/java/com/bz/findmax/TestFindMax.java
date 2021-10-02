@@ -3,22 +3,21 @@ import org.junit.Assert;
 import org.junit.Test;
 public class TestFindMax {
     @Test
-    public void findMaxFromGivenThreeIntegers(){
+    public void findMaxFromGivenThreeFloat(){
         FindMax findMax = new FindMax();
-        int max = findMax.findMaximun(9,7,8);
-        Assert.assertEquals(9,max);
+        Float max = findMax.findMaximun(85.5f,80.5f,21.5f);
+        Assert.assertEquals((85.5f),max,0.1);
     }
     @Test
-    public void findMaxFromGivenThreeIntegersWhereMaxIsAtPositionTwo(){
+    public void findMaxFromGivenThreeFloatWhereMaxIsAtPositionTwo(){
         FindMax findMax = new FindMax();
-        int max = findMax.findMaximun(9,11,8);
-        Assert.assertEquals(11,max);
+        Float max = findMax.findMaximun(3.8f,21.9f,8.6f);
+        Assert.assertEquals((21.9f),max,0.1);
     }
     @Test
-    public void findMaxFromGivenThreeIntegersWhereMaxIsAtPositionThree(){
+    public void findMaxFromGivenThreeFloatWhereMaxIsAtPositionThree(){
         FindMax findMax = new FindMax();
-        int max = findMax.findMaximun(9,11,25);
-        Assert.assertEquals(25,max);
+        Float max = findMax.findMaximun(9.8f,11.9f,29.6f);
+        Assert.assertEquals(29.6,max,0.01);
     }
-
 }
