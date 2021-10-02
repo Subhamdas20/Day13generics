@@ -5,19 +5,19 @@ public class TestFindMax {
     @Test
     public void findMaxFromGivenThreeIntegers(){
         FindMax<Integer> findMax = new <Integer>FindMax(9,10,11);
-        int max = findMax.findMaximum(10,11,12);
+        int max = findMax.testMaximum(10,11,12);
         Assert.assertEquals(12,max);
     }
     @Test
     public void findMaxFromGivenThreeFloatWhereMaxIsAtPositionTwo(){
         FindMax<Float> findMax = new<Float> FindMax(9.5f,11.6f,8.8f);
-        Float max = findMax.findMaximum(9.5f,11.6f,8.8f);
+        Float max = findMax.testMaximum(9.5f,11.6f,8.8f);
         Assert.assertEquals(11.6f,max,0.1);
     }
     @Test
     public void findMaxFromGivenThreeStringWhereMaxIsAtPositionThree(){
         FindMax<String> findMax = new <String>FindMax("apple","peaches","bananaaa");
-        String  max = findMax.findMaximum("abcde","abcd","ab");
+        String  max = findMax.testMaximum("abcde","abcd","ab");
         Assert.assertEquals("abcde",max);
     }
     @Test
