@@ -8,9 +8,9 @@ public class FindMax <T extends Comparable<T>> {
         this.z = z;
     }
     public T testMaximum(){
-      return   FindMax.findMaximum(x , y , z);
+      return   FindMax.testMaximum(x , y , z);
     }
-    public static  <T extends Comparable<T>> T findMaximum(T x , T y , T z){
+    public static  <T extends Comparable<T>> T testMaximum(T x , T y , T z){
         T max =  x;
         if(y.compareTo(max)>0){
             max=y;
@@ -18,9 +18,13 @@ public class FindMax <T extends Comparable<T>> {
         if(z.compareTo(max)>0){
             max=z;
         }
+        printMax(x,y,z,max);
         return max;
     }
     public static <T>void printMax(T ... a){
-
+        for(T i:a) {
+            System.out.print(i+" ");
+        }
+        System.out.println();
     }
 }
