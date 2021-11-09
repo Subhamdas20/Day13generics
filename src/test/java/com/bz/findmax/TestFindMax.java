@@ -20,4 +20,5 @@ public class TestFindMax {
         Float max = findMax.findMaximun(9.8f,11.9f,29.6f);
         Assert.assertEquals(29.6,max,0.01);
     }
+
 }
