@@ -20,4 +20,5 @@ public class TestFindMax {
         String max = findMax.findMaximum("abc","abcde","abcdefg");
         Assert.assertEquals("abcdefg",max);
     }
+
 }
