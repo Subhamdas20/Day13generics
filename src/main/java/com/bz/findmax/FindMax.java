@@ -18,7 +18,7 @@ public class FindMax <T extends Comparable<T>> {
         if(z.compareTo(max)>0){
             max=z;
         }
-        printMax(x,y,z,max);
+        printMax(max);
         return max;
     }
     public static <T>void printMax(T ... a){
@@ -27,4 +27,5 @@ public class FindMax <T extends Comparable<T>> {
         }
         System.out.println();
     }
+
 }
