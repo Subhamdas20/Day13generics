@@ -20,5 +20,4 @@ public class TestFindMax {
         int max = findMax.findMaximun(9,11,25);
         Assert.assertEquals(25,max);
     }
-
 }
